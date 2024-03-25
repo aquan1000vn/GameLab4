@@ -849,6 +849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
+    - target: {fileID: 5452519868352320176, guid: f427b9a0c27c35546a9e43476c3fdbb7, type: 3}
+      propertyPath: m_TagString
+      value: MapEdge
+      objectReference: {fileID: 0}
     - target: {fileID: 8882421792056352032, guid: f427b9a0c27c35546a9e43476c3fdbb7, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.803072
@@ -896,8 +900,72 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5452519868352320176, guid: f427b9a0c27c35546a9e43476c3fdbb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1225599290827155426}
   m_SourcePrefab: {fileID: 100100000, guid: f427b9a0c27c35546a9e43476c3fdbb7, type: 3}
+--- !u!1 &1225599290827155425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5452519868352320176, guid: f427b9a0c27c35546a9e43476c3fdbb7, type: 3}
+  m_PrefabInstance: {fileID: 1225599290827155424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!68 &1225599290827155426
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225599290827155425}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 5.346605, y: 1.8232957}
+  - {x: 2.4213111, y: 1.8008916}
+  - {x: 2.4027152, y: 1.2277628}
+  - {x: -2.8408124, y: 1.1935776}
+  - {x: -2.8498268, y: -1.1122234}
+  - {x: -3.406525, y: -1.0970694}
+  - {x: -3.3983595, y: 1.7785201}
+  - {x: -5.1654615, y: 1.7808516}
+  - {x: -5.178415, y: -1.7155876}
+  - {x: -2.255518, y: -1.7114784}
+  - {x: -2.2522388, y: -1.1302953}
+  - {x: 3.0217245, y: -1.0847051}
+  - {x: 3.047273, y: 1.1615112}
+  - {x: 3.6179316, y: 1.1758472}
+  - {x: 3.6131673, y: -1.718052}
+  - {x: 5.371088, y: -1.7198462}
+  - {x: 5.370393, y: 1.7974333}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &1997258852590571156
 PrefabInstance:
   m_ObjectHideFlags: 0

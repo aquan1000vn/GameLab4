@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class VuongController: MonoBehaviour
+public class VuongController : MonoBehaviour
 {
     public float timeRemaining = 60;
     public Text countdownText;
+    public bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +16,24 @@ public class VuongController: MonoBehaviour
     }
     IEnumerator Countdown()
     {
-        while (timeRemaining > 0)
+        while (timeRemaining > 0 && !gameOver)
         {
             yield return new WaitForSeconds(1);
             timeRemaining--;
             countdownText.text = "Time: " + timeRemaining.ToString();
         }
-        countdownText.text = "Time's up!";
+        if (!gameOver)
+        {
+            countdownText.text = "Time's up!";
+            GameOver();
+        }  
     }
-
+ void GameOver()
+    {
+        gameOver = true;
+        Debug.Log("a");
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -43,7 +53,7 @@ public class VuongController: MonoBehaviour
         if (collision.gameObject.tag.Equals("Tron"))
         {
             Debug.Log("x"); ;
-            Vector2 firstPosition = new Vector2(-8, 1);
+            Vector2 firstPosition = new Vector2(-9, -2);
             transform.position = firstPosition;
         }
         if (collision.gameObject.name.Equals("Box"))
@@ -51,6 +61,15 @@ public class VuongController: MonoBehaviour
             Debug.Log("win");
             LoadNextScene();
 
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if  (collision.CompareTag("MapEdge"))
+        {
+            Debug.Log("a");
+            Vector2 firstPosition = new Vector2(-9, -2);
+            transform.position = firstPosition;
         }
     }
 }
