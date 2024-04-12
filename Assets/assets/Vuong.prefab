@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 2952092823587637082}
   - component: {fileID: 89200234481029772}
   - component: {fileID: 1583388793573705541}
-  - component: {fileID: 1164281037826371604}
+  - component: {fileID: 4176490115416914606}
+  - component: {fileID: 3585939158972582778}
+  - component: {fileID: 7721029705317975003}
   m_Layer: 0
   m_Name: Vuong
   m_TagString: Vuong
@@ -29,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 3128468054121677751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.17, y: -1.79, z: 0}
+  m_LocalScale: {x: 1.2386, y: 1.2386, z: 1.2386}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -140,7 +142,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3128468054121677751}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -159,7 +161,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1164281037826371604
+--- !u!114 &4176490115416914606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,8 +170,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 3128468054121677751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16afe491b68ce124daea93304a623752, type: 3}
+  m_Script: {fileID: 11500000, guid: c311aa5f66c0c8242b875e483681ee6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeRemaining: 60
   countdownText: {fileID: 0}
+  moveSpeed: 5
+  bulletPrefab: {fileID: 5795389358870799538, guid: 470219523e76fb141b12be3250f4b582, type: 3}
+  bulletSpeed: 10
+--- !u!114 &3585939158972582778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128468054121677751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c64e1fd2a9e523449188b4f8a9f9c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+--- !u!114 &7721029705317975003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128468054121677751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d439598265e32641943c904d36881ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
